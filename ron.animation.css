@@ -1,0 +1,73 @@
+@keyframes RiseUp {
+    from {
+	margin: 1280px 0px 0px 0px;
+	opacity: 0%;
+    }
+
+    to {
+	margin: 0px 0px 0px 0px;
+	opacity: 100%;
+    }
+}
+
+@keyframes GlideToRight {
+    from {
+	margin: 0px;
+    }
+
+    to {
+	margin: 0px 0px 0px 240px;
+    }
+}
+
+@keyframes AestheticPinkFade {
+    33.33% {
+	color: var(--white);
+    }
+
+    66.66% {
+	color: var(--aesthetic-pink);
+    }
+ 
+    99.99% {
+	color: var(--white);
+    }
+}
+
+@keyframes AestheticPinkFadeBack {
+    33.33% {
+	background-color: var(--white);
+    }
+
+    66.66% {
+	background-color: var(--aesthetic-pink);
+    }
+
+    99.99% {
+	background-color: var(--white);
+    }
+}
+
+@keyframes SizeUp {
+    from {;
+	font-size: clamp(24px, 36px, 48px);
+    }
+
+    to {
+	font-size: clamp(24px, 48px, 48px);
+    }
+}
+
+@keyframes AestheticAmbient {
+    33.33% {
+	background-color: var(--aesthetic-pink);
+    }
+
+    66.66% {
+	background-color: var(--aesthetic-blue);
+    }
+
+    99.99% {
+	background-color: var(--aesthetic-pink);
+    }
+}
