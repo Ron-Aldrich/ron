@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron Aldrich Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Header -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Ron Aldrich</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="home" class="container">
+                <div class="hero-pic">
+                    <img src="ron.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Short-Film Editor</span></h5>
+                    <h1>Ron Aldrich</h1>
+                    <p>I'm Ron Aldrich Duterte from the Philippines. I love coding, editing, and designing. I started coding at the age of 13 using mobile devices. Let me help bring your vision to life!</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <p>Contacts:</p>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="wrapper">
+            <h2>Projects</h2>
+            <div class="portfolio-items">
+                <div class="item">
+                    <img src="ron.jpg" alt="Project 1">
+                    <h3><a href="jjj">Project 1</a></h3>
+                    <p>Short description of the project goes here.</p>
+                </div>
+                <div class="item">
+                    <img src="ron.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Short description of the project goes here.</p>
+                </div>
+                <div class="item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Short description of the project goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+       
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2024 Ron Aldrich. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Short-Film Editor", "Web Developer", "Freelancer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
