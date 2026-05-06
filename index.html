@@ -31,6 +31,39 @@
                     <p>I’m Ron Aldrich Duterte from the Philippines. I started coding at the age of 13, mainly using Python, and I also know HTML and CSS. I use Python as a backend for my projects. I love filmmaking, video editing, and capturing cinematic shots that tell stories. I currently serve as the videographer and video editor for <a href="https://www.facebook.com/cnhsseniorcresset" target="_blank">The Senior Cresset</a></p>
                     <div class="btn-group">
                         <a href="personalpdf.pdf" class="btn active" download>Download CV</a>
+
+
+                        <div class="cert-preview">
+    <span class="cert-label">NC II Certification</span>
+
+    <img src="certificate/nc.jpg" 
+         alt="NC II Certificate"
+         class="cert-img"
+         onclick="openCertModal(this)">
+    </div>
+
+    <!-- MODAL -->
+    <div id="certModal" class="cert-modal">
+        <span class="cert-close" onclick="closeCertModal()">&times;</span>
+        <img class="cert-modal-content" id="certModalImg">
+    </div>
+
+    <script>
+    function openCertModal(img) {
+        const modal = document.getElementById("certModal");
+        const modalImg = document.getElementById("certModalImg");
+
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+    }
+
+    function closeCertModal() {
+        document.getElementById("certModal").style.display = "none";
+    }
+    </script>
+
+
+
                             
                     </div>
                     <div class="social">
