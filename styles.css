@@ -435,3 +435,72 @@ nav .navlinks li a {
 
 
 
+/* Container */
+.cert-preview {
+    margin-top: 18px;
+}
+
+/* Label (subtle, not loud) */
+.cert-label {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+/* Small preview */
+.cert-img {
+    width: 80px;
+    border-radius: 8px;
+    cursor: zoom-in;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cert-img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Modal background */
+.cert-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Zoomed image */
+.cert-modal-content {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 10px;
+    animation: zoomFade 0.25s ease;
+}
+
+/* Close button */
+.cert-close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Smooth animation */
+@keyframes zoomFade {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
