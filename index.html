@@ -4,233 +4,269 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ron | Dev & Editor </title>
-    <link rel="icon" href="CyberronLogo.png.png">
+    <title>Ron | Dev  &amp; Editor</title>
+    <link rel="icon" href="/CyberronLogo.png.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-   
-    <div class="hero-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-r"></i>
-                    <div class="logo-text">on Aldrich</div>
-                </div>
-                
-            </header>
-            <div id="home" class="container">
-                <div class="hero-pic">
-                    <img src="ron.jpg" alt="profile pic">
-                </div>
-                <div class="hero-text">
-                    <h5>Hi I'm <span class="input">Short-Film Editor</span></h5>
-                    
-                    <h1>Ron Aldrich</h1>
-                    <p>I’m Ron Aldrich Duterte from the Philippines. I started coding at the age of 13, mainly using Python, and I also know HTML and CSS. I use Python as a backend for my projects. I love filmmaking, video editing, and capturing cinematic shots that tell stories. I previously served as the videographer and video editor for <a href="https://www.facebook.com/cnhsseniorcresset" target="_blank">The Senior Cresset</a> , and I currently serve as the videographer and video editor for
-                     <a href="https://www.facebook.com/CICSCouncil" target="_blank">CICS - Student Council</a> </p>
-                    <div class="btn-group">
-                        <a href="personalpdf.pdf" class="btn active" download>Download CV</a>
 
-
-                        <div class="cert-preview">
-    <span class="cert-label">NC II Certification</span>
-
-    <img src="certificate/nc.jpg" 
-         alt="NC II Certificate"
-         class="cert-img"
-         onclick="openCertModal(this)">
+    <!-- ano yan ha -->
+    <div class="rail rail--top">
+        <span class="rail__rec"><span class="rail__dot"></span><span class="rail__rec-label">REC</span></span>
+        <span class="rail__tc" id="scrubTC">00:00:00:00</span>
+        <div class="rail__track"><div class="rail__playhead" id="playhead"></div></div>
+        <span class="rail__ratio">2.39:1</span>
     </div>
-
-    <!-- MODAL -->
-    <div id="certModal" class="cert-modal">
-        <span class="cert-close" onclick="closeCertModal()">&times;</span>
-        <img class="cert-modal-content" id="certModalImg">
-    </div>
-
-    <script>
-    function openCertModal(img) {
-        const modal = document.getElementById("certModal");
-        const modalImg = document.getElementById("certModalImg");
-
-        modal.style.display = "flex";
-        modalImg.src = img.src;
-    }
-
-    function closeCertModal() {
-        document.getElementById("certModal").style.display = "none";
-    }
-    </script>
-
-
-
-                            
-                    </div>
-                    <div class="social">
-                        <p>Contacts:</p>
-                        <a href="https://www.facebook.com/share/17FpfJ97Nw/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        
-                        <a href="https://www.instagram.com/ron_aldrichd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@cyronn69" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section id="projects" class="section">
-
-        <div class="wrapper">
-            <h2>Professional and Academic Projects</h2>
-            <div class="portfolio-items">
-
-                <div class="item">
-                    <a href="https://www.facebook.com/share/p/1BdBpNBjJd/" target="_blank">
-                    <img src="ProfessionalsAndAcads/rsc.jpg" alt="Project 2" height="360px"></a>
-                    <h3><a href="https://www.facebook.com/share/p/1BdBpNBjJd/" target="_blank">WorldSkills</a></h3>
-                    <p>Secured 1st Place in Software Application Development at the WorldSkills Philippines Cagayan Valley 2026 Regional Skills Olympics under TESDA Aparri Polytechnic Institute, advancing to represent Region II at the Nationals.
-</p>
-                </div>
-
-
-                <div class="item">
-                    <a href="https://youtu.be/bCmFgRZmzV8" target="_blank">
-                    <img src="ProfessionalsAndAcads/journeyPenablanca.png" alt="Project 2" height="360px"></a>
-                    <h3><a href="https://youtu.be/bCmFgRZmzV8" target="_blank">A Journey through Peñablanca</a></h3>
-                    <p>Served as video editor for a documentary on the Land of the Caves in Peñablanca, enhancing visual quality, pacing, and overall storytelling.</p>
-                </div>
-
-
-
-                <div class="item">
-                    <a href="https://www.facebook.com/share/p/17TQRNSjjq/" target="_blank">
-                    <img src="ProfessionalsAndAcads/wsc.jpg" alt="Project 2" height="360px"></a>
-                    <h3><a href="https://www.facebook.com/share/p/17TQRNSjjq/" target="_blank">WorldSkills</a></h3>
-                    <p>Secured 1st Place in Software Application Development at WorldSkills Cagayan 2026 under TESDA Aparri Polytechnic Institute.</p>
-                </div>
-
-
-                <div class="item">
-                    <a href="https://www.facebook.com/share/v/18QVS8So5P/" target="_blank"><img src="ProfessionalsAndAcads/AnotherLevel.jpg" alt="Project 2" height="360px"></a>
-                    <h3><a href="https://www.facebook.com/share/v/18QVS8So5P/" target="_blank">The Another Level</a></h3>
-                    <p>Out of 46 participants, this trailer earned 2nd place at the Cinetech Film Festival. I toook charge of full production, turning a single visiion into a finished piece.</p>
-                </div>
-
-
-
-                <div class="item">
-                    <a href="https://www.facebook.com/share/v/1DwECFBeYY/" target="_blank"><img src="ProfessionalsAndAcads/talentalino.jpg" alt="Project 2" height="360px"></a>
-                    <h3><a href="https://www.facebook.com/share/v/1DwECFBeYY/" target="_blank">TALENTALINO</a></h3>
-                    <p>At the Division Festival of Talents (DFOT) - Award winning production achieving Best Story, Best Screenplay, Best Actress, and 2nd Place Overall. I served as the <b>Director and Editor</b>, leading the creative vision and post-production of the project.</p>
-                </div>
-
-                <div class="item">
-                    <a href="https://youtu.be/e4yLgrKVNyQ?si=1RDSqlgSdy0ErCWF" target="_blank"><img src="ProfessionalsAndAcads/miko.png" alt="Project 2" height="360px"></a>
-                    <h3><a href="https://youtu.be/e4yLgrKVNyQ?si=1RDSqlgSdy0ErCWF" target="_blank">DOCUMENTATION-FILM</a></h3>
-                    <p>I captured multiple video clips for the documentation and handled the full editing process, arranging the footage, improving visual quality, and creating a polished video that highlights the key points of the documentation.</p>
-                </div>
-
-
-                <div class="item">
-                    <a href="https://nexora-teamph.onrender.com/" target="_blank"><img src="ProfessionalsAndAcads/nexora.jpeg" alt="Project 3"></a>
-                    <h3><a href="https://nexora-teamph.onrender.com/" target="_blank">NEXORA</a></h3>
-                    <p>Developed a website for Nexora where users can easily browse products and make purchases directly online.</p>
-                </div>
-
-
-                
-                 <div class="item">
-                    <a href="https://www.facebook.com/share/v/17qgRYVYB8/" target="_blank"><img src="ProfessionalsAndAcads/cresset.png" alt="Project 3"></a>
-                    <h3><a href="https://www.facebook.com/share/v/17qgRYVYB8/" target="_blank">The Senior Cresset</a></h3>
-                    <p>As part of The Senior Cresset team, I worked as an Editor and Videographer, responsible for capturing, producing, and editing school broadcasts and event features.</p>
-                </div>
-
-                <div class="item">
-                    <a href="https://youtu.be/dMvp4vchcNE?si=3rzyOl-Krh4GyuJK" target="_blank"><img src="ProfessionalsAndAcads/Documentation.png" alt="Project 2" height="360px"></a>
-                    <h3><a href="https://youtu.be/dMvp4vchcNE?si=3rzyOl-Krh4GyuJK" target="_blank">DOCUMENTATION-FILM</a></h3>
-                    <p>Served as video editor for a documentary film project, focusing on improving visual quality, pacing, and clarity of the overall message.</p>
-                </div>
-
-                
-            </div>
-
-
-
-        <br><br><br><br><br>
-        
-            <h2>Personal projects</h2>
-            <div class="portfolio-items">
-
-                 <div class="item">
-                    <a href="https://p-booth.onrender.com" target="_blank"><img src="ProjectIMG/pboot.png" alt="Project 3"></a>
-                    <h3><a href="https://p-booth.onrender.com" target="_blank">Photo-Booth</a></h3>
-                    <p>Say cheese! 📸 Snap photos with fun templates and download them instantly. Works on any device!</p>
-                </div>
-
-
-                <div class="item">
-                    <a href="http://ron-aldrich.github.io/DraftWeb/" target="_blank"><img src="ProjectIMG/PersonalWebsite.png" alt="Project 1"></a>
-                    <h3><a href="http://ron-aldrich.github.io/DraftWeb/" target="_blank">My first Personal Website</a></h3>
-                    <p>This is my very first personal website, featuring animations and created by <a href="https://www.facebook.com/yerenzter" target="_blank">Yer Flores Umiten</a></p>
-                </div>
-
-
-                <div class="item">
-                    <a href="https://cybertech-quiz.onrender.com" target="_blank"><img src="ProjectIMG/cyberronquiz.png" alt="Project 3"></a>
-                    <h3><a href="https://cybertech-quiz.onrender.com" target="_blank">CyberronQUIZ</a></h3>
-                    <p>A web app that lets users take quizzes with Google login using OAuthLib. It uses Flask for the backend and PostgreSQL for storing user data and scores.</p>
-                </div>
-
-                
-
-                <div class="item">
-                    <a href="https://ron-aldrich.github.io/Web-Calculator/" target="_blank"><img src="ProjectIMG/WebCal.png" alt="Project 3"></a>
-                    <h3><a href="https://ron-aldrich.github.io/Web-Calculator/" target="_blank">Web-Calculator</a></h3>
-                    <p>This website can calculate BMI, averages, and basic operations with a normal calculator. It is compatible with both mobile phones and desktops.</p>
-                </div>
-                
-                
-            </div>
-            
-        </div>
-
-                
-    </section>
-
-    <section id="contact" class="section">
-       
-        </div>
-    </section>
 
     
-    <footer>
-        <div class="wrapper">
-            <center><p>&copy; 2025 Ron Aldrich. All Rights Reserved.</p></center>
+
+    <header class="hero" id="home">
+        <div class="wrapper hero__grid">
+
+            <div class="hero__copy">
+                <p class="hero__slate">CLIP 001 — TITLE CARD</p>
+                <h1 class="hero__name">Ron Aldrich</h1>
+                <p class="hero__role"><span class="typed"></span><span class="hero__cursor">|</span></p>
+
+
+                <p>I’m Ron Aldrich Duterte from the Philippines. I enjoy both technology and filmmaking, especially creating things through coding, video editing, and storytelling. I previously served as a videographer and video editor for <a href="https://www.facebook.com/cnhsseniorcresset" target="_blank">The Senior Cresset</a>, and I currently serve as a videographer and video editor for <a href="https://www.facebook.com/CICSCouncil" target="_blank">CICS - Student Council</a>.</p>
+
+                
+
+                <div class="hero__actions">
+                    <a href="personalpdf.pdf" class="btn btn--solid" download>
+                        <i class="fa-solid fa-arrow-down"></i> Download CV
+                    </a>
+                    
+                </div>
+                    <div class="cert-preview">
+                    <span class="cert-label">CERTIFICATE</span><img src="certificate/nc.jpg" alt="NC II Certificate" class="cert-img" id="certImg">
+                </div>
+
+                <div class="cert-modal" id="certModal">
+                    <span class="cert-close" id="certClose">&times;</span>
+                    <img src="certificate/nc.jpg" alt="NC II Certificate" class="cert-modal-content">
+                 </div>  
+
+
+                <div class="hero__social">
+                    <span class="hero__social-label">Find me on</span>
+                    <a href="https://www.facebook.com/share/17FpfJ97Nw/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ron_aldrichd/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@cyronn69" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+
+                <div class="hologram">
+                    <p class="hologram__label">LANGUAGES KNOWN</p>
+                    <div class="hologram__grid">
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="">Kotlin (Android Studio)</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">Java (Android Studio)</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="">C#</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg" alt="">ASP.NET</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">HTML</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+                        <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="hero__frame">
+                <div class="hero__frame-inner">
+                    <img src="ron.jpg" alt="Portrait of Ron Aldrich Duterte">
+                </div>
+                <figcaption class="hero__frame-tag">FRAME 01 / CAGAYAN VALLEY, PH</figcaption>
+            </figure>
+
+        </div>
+        
+    </header>
+
+    
+    
+
+    
+
+    
+    <main>
+        <section id="projects" class="reel">
+            <div class="wrapper">
+                <div class="reel__head">
+                    <h2>The Reel</h2>
+                    <p>Professional &amp; academic work, in the order they cut together.</p>
+                </div>
+
+                <ol class="reel__list">
+
+
+                    <li class="reel__item">
+                        <span class="reel__tc">00:10</span>
+                        <a class="reel__thumb" href="https://www.facebook.com/share/p/1BsiU2Rp5j/" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/na.png" alt="WorldSkills Philippines Cagayan Valley 2026">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://www.facebook.com/share/p/1BdBpNBjJd/" target="_blank" rel="noopener">WorldSkills Philippines Clark 2026 - National</a></h3>
+                            <p>Top 8 in the Philippines, Software Application Development at WorldSkills Philippines Clark 2026 — National Competition, representing Region II.</p>
+                        </div>
+                    </li>
+
+
+                    <li class="reel__item">
+                        <span class="reel__tc">00:09</span>
+                        <a class="reel__thumb" href="https://www.facebook.com/share/p/1BdBpNBjJd/" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/rsc.jpg" alt="WorldSkills Philippines Cagayan Valley 2026">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://www.facebook.com/share/p/1BdBpNBjJd/" target="_blank" rel="noopener">WorldSkills — Regionals</a></h3>
+                            <p>1st place, Software Application Development at WorldSkills Philippines Cagayan Valley 2026, under TESDA Aparri Polytechnic Institute — advancing to represent Region II at the Nationals.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item reel__item--reverse">
+                        <span class="reel__tc">00:08</span>
+                        <a class="reel__thumb" href="https://youtu.be/bCmFgRZmzV8" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/journeyPenablanca.png" alt="A Journey through Peñablanca documentary">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://youtu.be/bCmFgRZmzV8" target="_blank" rel="noopener">A Journey through Peñablanca</a></h3>
+                            <p>Video editor on a documentary about the Land of the Caves in Peñablanca — shaped the pacing and visual quality of the final cut.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item">
+                        <span class="reel__tc">00:07</span>
+                        <a class="reel__thumb" href="https://www.facebook.com/share/p/17TQRNSjjq/" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/wsc.jpg" alt="WorldSkills Cagayan 2026">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://www.facebook.com/share/p/17TQRNSjjq/" target="_blank" rel="noopener">WorldSkills Cagayan</a></h3>
+                            <p>1st place, Software Application Development at WorldSkills Cagayan 2026, under TESDA Aparri Polytechnic Institute.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item reel__item--reverse">
+                        <span class="reel__tc">00:6</span>
+                        <a class="reel__thumb" href="https://www.facebook.com/share/v/18QVS8So5P/" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/AnotherLevel.jpg" alt="The Another Level trailer">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://www.facebook.com/share/v/18QVS8So5P/" target="_blank" rel="noopener">The Another Level</a></h3>
+                            <p>2nd place at the Cinetech Film Festival out of 46 entries. Took the trailer through full production, from one vision to a finished piece.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item">
+                        <span class="reel__tc">00:05</span>
+                        <a class="reel__thumb" href="https://www.facebook.com/share/v/1DwECFBeYY/" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/talentalino.jpg" alt="TALENTALINO production">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://www.facebook.com/share/v/1DwECFBeYY/" target="_blank" rel="noopener">Talentalino</a></h3>
+                            <p>Director and editor for the Division Festival of Talents entry — Best Story, Best Screenplay, Best Actress, and 2nd place overall.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item reel__item--reverse">
+                        <span class="reel__tc">00:04</span>
+                        <a class="reel__thumb" href="https://youtu.be/e4yLgrKVNyQ?si=1RDSqlgSdy0ErCWF" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/miko.png" alt="Documentation film">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://youtu.be/e4yLgrKVNyQ?si=1RDSqlgSdy0ErCWF" target="_blank" rel="noopener">Documentation Film</a></h3>
+                            <p>Shot and edited the full documentation — arranging footage, grading, and cutting it down to the key moments.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item">
+                        <span class="reel__tc">00:03</span>
+                        <a class="reel__thumb" href="https://nexora-teamph.onrender.com/" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/nexora.jpeg" alt="Nexora website">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://nexora-teamph.onrender.com/" target="_blank" rel="noopener">Nexora</a></h3>
+                            <p>Built the website for Nexora, where customers browse products and check out directly online.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item reel__item--reverse">
+                        <span class="reel__tc">00:02</span>
+                        <a class="reel__thumb" href="https://www.facebook.com/share/v/17qgRYVYB8/" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/cresset.png" alt="The Senior Cresset">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://www.facebook.com/share/v/17qgRYVYB8/" target="_blank" rel="noopener">The Senior Cresset</a></h3>
+                            <p>Editor and videographer for the school's broadcast team — capturing, producing, and cutting broadcasts and event features.</p>
+                        </div>
+                    </li>
+
+                    <li class="reel__item">
+                        <span class="reel__tc">00:01</span>
+                        <a class="reel__thumb" href="https://youtu.be/dMvp4vchcNE?si=3rzyOl-Krh4GyuJK" target="_blank" rel="noopener">
+                            <img src="ProfessionalsAndAcads/Documentation.png" alt="Documentation film">
+                        </a>
+                        <div class="reel__body">
+                            <h3><a href="https://youtu.be/dMvp4vchcNE?si=3rzyOl-Krh4GyuJK" target="_blank" rel="noopener">Documentation Film</a></h3>
+                            <p>Editor on a second documentary project, focused on pacing and clarity of the overall message.</p>
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+
+        <section class="broll">
+            <div class="wrapper">
+                <div class="broll__head">
+                    <h2>B-Roll</h2>
+                    <p>Personal builds, shot on my own time.</p>
+                </div>
+
+                <div class="broll__grid">
+
+                    <a class="broll__card" href="https://p-booth.onrender.com" target="_blank" rel="noopener">
+                        <div class="broll__thumb"><img src="ProjectIMG/pboot.png" alt="Photo Booth app"></div>
+                        <h3>Photo Booth</h3>
+                        <p>Snap photos with fun templates and download them instantly. Works on any device.</p>
+                    </a>
+
+                    
+                    <a class="broll__card" href="http://ron-aldrich.github.io/DraftWeb/" target="_blank" rel="noopener">
+                        <div class="broll__thumb"><img src="ProjectIMG/PersonalWebsite.png" alt="First personal website"></div>
+                        <h3>First Personal Website</h3>
+                        <p>My very first personal site, with animations built alongside</p>
+                        
+                    </a>
+                    
+                    <a class="broll__card" href="https://cybertech-quiz.onrender.com" target="_blank" rel="noopener">
+                        <div class="broll__thumb"><img src="ProjectIMG/cyberronquiz.png" alt="CyberronQUIZ app"></div>
+                        <h3>CyberronQUIZ</h3>
+                        <p>Quiz app with Google sign-in via OAuthLib. Flask backend, PostgreSQL for user data and scores.</p>
+                    </a>
+
+                    <a class="broll__card" href="https://ron-aldrich.github.io/Web-Calculator/" target="_blank" rel="noopener">
+                        <div class="broll__thumb"><img src="ProjectIMG/WebCal.png" alt="Web Calculator app"></div>
+                        <h3>Web Calculator</h3>
+                        <p>Calculates BMI, averages, and everyday operations — works on desktop and mobile alike.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="credits">
+        <div class="wrapper credits__inner">
+            <p class="credits__role">Directed &amp; developed by Ron Aldrich Duterte</p>
+            <p class="credits__copy">&copy; 2026 Ron Aldrich. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script>
-        var togglebtn = document.querySelector(".togglebtn");
-        var nav = document.querySelector(".navlinks");
-        togglebtn.addEventListener("click", function () {
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        });
-
-        
-    </script>
-    <script>
-        var typed = new Typed(".input", {
-            strings: ["Web Developer", "Python Coder", "Short-Film Edirtor", "Freelancer", "Video Editor"],
-            typedSpeed: 70,
-            backSpeed: 55,
-            loop: true
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
->
