@@ -50,8 +50,7 @@ if (window.Typed) {
 })();
 
 // Broken-image safety net: if a photo 404s or fails to decode, swap it for a
-// styled placeholder instead of the browser's default broken-image icon so
-// the layout and aspect ratio never break.
+// styled placeholder instead of the browser's default broken-image icon.
 (function () {
     function handleError(img) {
         if (img.dataset.fallbackApplied) return;
@@ -59,7 +58,7 @@ if (window.Typed) {
         img.style.objectFit = "cover";
         img.style.background = "linear-gradient(135deg, #19191c, #232327)";
         img.alt = img.alt || "Image unavailable";
-        const wrap = img.closest(".reel__thumb, .broll__thumb, .hero__frame-inner");
+        const wrap = img.closest(".award__thumb, .broll__thumb, .hero__frame-inner");
         if (wrap) wrap.classList.add("thumb--broken");
     }
 
@@ -71,31 +70,7 @@ if (window.Typed) {
     });
 })();
 
-
-(function () {
-    const openBtn = document.getElementById("certOpen");
-    const closeBtn = document.getElementById("certClose");
-    const modal = document.getElementById("certModal");
-    if (!openBtn || !closeBtn || !modal) return;
-
-    function open() {
-        modal.classList.add("is-open");
-        closeBtn.focus();
-    }
-    function close() {
-        modal.classList.remove("is-open");
-        openBtn.focus();
-    }
-
-    openBtn.addEventListener("click", open);
-    closeBtn.addEventListener("click", close);
-    modal.addEventListener("click", (e) => {
-        if (e.target === modal) close();
-    });
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && modal.classList.contains("is-open")) close();
-    });
-})();
+// Certificate modal
 (function () {
     const certImg = document.getElementById("certImg");
     const certModal = document.getElementById("certModal");
@@ -121,4 +96,50 @@ if (window.Typed) {
             closeCertModal();
         }
     });
+})();
+
+// Project folders
+(function () {
+    const folders = document.querySelectorAll(".folder");
+    if (!folders.length) return;
+
+    function setOpen(folder, open) {
+        folder.classList.toggle("is-open", open);
+        folder.querySelector(".folder__btn").setAttribute("aria-expanded", String(open));
+        folder.querySelector(".folder__panel").hidden = !open;
+        const icon = folder.querySelector(".folder__icon i");
+        if (icon) icon.className = open ? "fa-regular fa-folder-open" : "fa-regular fa-folder";
+    }
+
+    folders.forEach((folder) => {
+        folder.querySelector(".folder__btn").addEventListener("click", () => {
+            const wasOpen = folder.classList.contains("is-open");
+            setOpen(folder, !wasOpen);
+            if (wasOpen) folder.scrollIntoView({ block: "nearest" }); // keep your place after closing
+        });
+    });
+
+    // Deep links: index.html#finished or #personal opens that folder.
+    function openFromHash() {
+        const target = document.getElementById(location.hash.slice(1));
+        if (target && target.classList.contains("folder")) {
+            setOpen(target, true);
+            target.scrollIntoView();
+        }
+    }
+    openFromHash();
+    window.addEventListener("hashchange", openFromHash);
+})();
+
+// Highlight the current section in the top nav
+(function () {
+    const links = document.querySelectorAll(".rail__nav a");
+    if (!("IntersectionObserver" in window) || !links.length) return;
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            links.forEach((a) => a.classList.toggle("is-active", a.getAttribute("href") === "#" + e.target.id));
+        });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    ["home", "awards", "projects"].forEach((id) => { const el = document.getElementById(id); if (el) io.observe(el); });
 })();
