@@ -503,7 +503,7 @@ a:focus-visible, button:focus-visible {
     .cert-close { top: 12px; right: 16px; font-size: 26px; }
 }
 
-/* ---------- skills hologram (responsive) ---------- */
+/* HOLOGRAM - responsive po ito */
 
 .hologram {
     margin-top: 22px;
