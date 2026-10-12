@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ron | Dev &amp; Editor</title>
     <link rel="icon" href="/CyberronLogo.png.png">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
                 <h1 class="hero__name">Ron Aldrich</h1>
                 <p class="hero__role"><span class="typed"></span><span class="hero__cursor">|</span></p>
 
-                <p>I’m Ron Aldrich Duterte from the Philippines. I enjoy both technology and filmmaking, especially creating things through coding, video editing, and storytelling. I previously served as a videographer and video editor for <a href="https://www.facebook.com/cnhsseniorcresset" target="_blank" rel="noopener">The Senior Cresset</a>, and I currently serve as a videographer and video editor for <a href="https://www.facebook.com/CICSCouncil" target="_blank" rel="noopener">CICS - Student Council</a>.</p>
+                <p>I’m Ron Aldrich Duterte from the Philippines. I enjoy both technology and filmmaking, especially creating things through coding, video editing, and storytelling</p>
 
                 <div class="hero__actions">
                     <a href="personalpdf.pdf" class="btn btn--solid" download>
@@ -72,6 +72,55 @@
                         <span class="hologram__chip"><img class="hologram__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">MySQL</span>
                     </div>
                 </div>
+
+
+                <!-- Organizations: minimal glass marquee (CSS only, loops forever) -->
+                <div class="orgs">
+                    <p class="orgs__label">ORGANIZATIONS</p>
+                    <div class="orgs__marquee">
+                        <div class="orgs__track">
+
+                            <div class="orgs__set">
+                                <a class="org" href="www.facebook.com/share/193rhiKGfJ/?mibextid=wwXIfr" target="_blank" rel="noopener">
+                                    <img class="org__logo" src="/Organization/POLI.png" alt="">
+                                    <span class="org__name">Politi-Knows</span>
+                                    <span class="org__status org__status--current">CURRENT</span>
+                                </a>
+                                <a class="org" href="https://www.facebook.com/CICSCouncil" target="_blank" rel="noopener">
+                                    <img class="org__logo" src="/Organization/CICS.png" alt="">
+                                    <span class="org__name">CICS Student Council</span>
+                                    <span class="org__status org__status--current">CURRENT</span>
+                                </a>
+                                <a class="org" href="www.facebook.com/share/193rhiKGfJ/?mibextid=wwXIfr" target="_blank" rel="noopener">
+                                    <img class="org__logo" src="/Organization/TSC.png" alt="">
+                                    <span class="org__name">The Senior Cresset</span>
+                                    <span class="org__status org__status--past">PAST</span>
+                                </a>
+                            </div>
+
+                            <!-- duplicate set: makes the loop seamless. Keep it identical to the set above. -->
+                            <div class="orgs__set" aria-hidden="true">
+                                <a class="org" href="https://www.facebook.com/YOUR-POLITI-KNOWS-PAGE" target="_blank" rel="noopener" tabindex="-1">
+                                    <img class="org__logo" src="orgs/politiknows.png" alt="">
+                                    <span class="org__name">Politi Knows</span>
+                                    <span class="org__status org__status--current">CURRENT</span>
+                                </a>
+                                <a class="org" href="https://www.facebook.com/CICSCouncil" target="_blank" rel="noopener" tabindex="-1">
+                                    <img class="org__logo" src="orgs/cics.png" alt="">
+                                    <span class="org__name">CICS Student Council</span>
+                                    <span class="org__status org__status--current">CURRENT</span>
+                                </a>
+                                <a class="org" href="https://www.facebook.com/cnhsseniorcresset" target="_blank" rel="noopener" tabindex="-1">
+                                    <img class="org__logo" src="orgs/cresset.png" alt="">
+                                    <span class="org__name">The Senior Cresset</span>
+                                    <span class="org__status org__status--past">PAST</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <figure class="hero__frame">
@@ -94,11 +143,76 @@
 
                 <div class="folders">
 
-                    <!-- Finished projects: client, organization, school, competition work -->
+
                     <div class="folder" id="finished">
                         <button class="folder__btn" type="button" aria-expanded="false" aria-controls="finishedPanel">
                             <span class="folder__icon"><i class="fa-regular fa-folder"></i></span>
-                            <span class="folder__title"><strong>Finished Projects</strong><small>For clients, organizations, school &amp; competitions</small></span>
+                            <span class="folder__title"><strong>CICS Student Council</strong><small>Worked as a video editor and videographer for the school publication.</small></span>
+                            <span class="folder__meta">7 ITEMS</span>
+                            <span class="folder__close">CLOSE ✕</span>
+                            <i class="fa-solid fa-chevron-right folder__chev"></i>
+                        </button>
+                        <div class="folder__panel" id="finishedPanel" hidden>
+                            <p class="folder__path">~/projects/finished</p>
+                            <div class="broll__grid">
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1Bf6P7mhWf/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/CICS/cics-1.png" alt="Documentation film"></div>
+                                    <h3>CICS Teaser</h3>
+                                    <p>Shot and edited a teaser video for the CICS Student Council.</p>
+                                </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1EFsCjQZYK/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/CICS/cics-2.png" alt="TSC MOJO documentary"></div>
+                                    <h3>CICS FreshieWeek</h3>
+                                    <p>Shot and edited videos capturing the fun and highlights of Freshie Week.</p>
+                                </a>
+
+                                
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1Ed5hLLJ25/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/CICS/cics-3.png" alt="Documentation film"></div>
+                                    <h3>Meet the CICS Student Council Officers </h3>
+                                    <p>Shot and edited a teaser video introducing the CICS Student Council officers and working committees.</p>
+                                </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1E2fBjVhcG/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/CICS/cics-4.png" alt="Documentation film"></div>
+                                    <h3>CICS Days 2026 ageant Teaer</h3>
+                                    <p>Edited a pageant teaser showcasing the candidates for CICS Days 2026.</p>
+                                </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1KZhVxMj5H/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/CICS/cics-5.png" alt="Documentation film"></div>
+                                    <h3>CICS Days 2026 Highlights</h3>
+                                    <p>Captured the best moments of CICS College Days 2026 for the event’s highlight video.</p>
+                                </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/18fjjnWuxR/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/CICS/cics-6.png" alt="Documentation film"></div>
+                                    <h3>Nexus Deer Intramurals 2026 Highlights</h3>
+                                    <p>Shot and edited a highlight video capturing the best moments of the Nexus Deer during CSU–Carig Intramurals 2026</p>
+                                </a>
+
+
+                                =
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="folder" id="finished">
+                        <button class="folder__btn" type="button" aria-expanded="false" aria-controls="finishedPanel">
+                            <span class="folder__icon"><i class="fa-regular fa-folder"></i></span>
+                            <span class="folder__title"><strong>The Senior Cresset</strong><small>Worked as a video editor and videographer for the school publication.</small></span>
                             <span class="folder__meta">5 ITEMS</span>
                             <span class="folder__close">CLOSE ✕</span>
                             <i class="fa-solid fa-chevron-right folder__chev"></i>
@@ -107,11 +221,72 @@
                             <p class="folder__path">~/projects/finished</p>
                             <div class="broll__grid">
 
-                                <a class="broll__card" href="https://youtu.be/bCmFgRZmzV8" target="_blank" rel="noopener">
-                                    <div class="broll__thumb"><img src="ProfessionalsAndAcads/journeyPenablanca.png" alt="A Journey through Peñablanca documentary"></div>
-                                    <h3>A Journey through Peñablanca</h3>
-                                    <p>Video editor on a documentary about the Land of the Caves in Peñablanca — shaped the pacing and visual quality of the final cut.</p>
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/14t92cUsFs2/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/TheSenniorCresset/tsc-1.png" alt="Documentation film"></div>
+                                    <h3>CNHS-SH Intramurals</h3>
+                                    <p>Captured and edited intramurals videos for the school publication.</p>
+                                    <h6 style="color: blue;">#MOJO</h6>
+                                    
                                 </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1CE4MuGKZE/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/TheSenniorCresset/tsc-2.png" alt="TSC MOJO documentary"></div>
+                                    <h3>CNHS-SH Intramurals</h3>
+                                    <p>Captured and edited intramurals videos for the school publication.</p>
+                                    <h6 style="color: blue;">#MOJO</h6>
+
+                                </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1VRYRECMYQ/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/TheSenniorCresset/tsc-3.png" alt="TSC MOJO documentary"></div>
+                                    <h3>CNHS-SH Intramurals</h3>
+                                    <p>Captured and edited intramurals videos for the school publication.</p>
+                                    <h6 style="color: blue;">#MOJO</h6>
+
+                                </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1KRK77iPFh/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/TheSenniorCresset/tsc-4.png" alt="TSC MOJO documentary"></div>
+                                    <h3>CNHS-SH Teachers' Day Celebration</h3>
+                                    <p>Captured and edited videos of the Teachers’ Day celebration for the school publication.</p>
+                                    <h6 style="color: blue;">#MOJO</h6>
+                                </a>
+
+
+                                <a class="broll__card" href="https://www.facebook.com/share/v/1Dg3WqikJ2/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="/Organization/TheSenniorCresset/tsc-5.png" alt="TSC MOJO documentary"></div>
+                                    <h3>CNHS-SH Recognition Day</h3>
+                                    <p>Captured and edited videos of the Recognition Program for the school publication.
+
+                                        <h6 style="color: blue;">#MOJO</h6>
+                                    </p>
+                                </a>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="folder" id="finished">
+                        <button class="folder__btn" type="button" aria-expanded="false" aria-controls="finishedPanel">
+                            <span class="folder__icon"><i class="fa-regular fa-folder"></i></span>
+                            <span class="folder__title"><strong>Commission Based</strong><small>Built for clients, based on their needs and requirements</small></span>
+                            <span class="folder__meta">3 ITEMS</span>
+                            <span class="folder__close">CLOSE ✕</span>
+                            <i class="fa-solid fa-chevron-right folder__chev"></i>
+                        </button>
+                        <div class="folder__panel" id="finishedPanel" hidden>
+                            <p class="folder__path">~/projects/finished</p>
+                            <div class="broll__grid">
+
 
                                 <a class="broll__card" href="https://youtu.be/e4yLgrKVNyQ?si=1RDSqlgSdy0ErCWF" target="_blank" rel="noopener">
                                     <div class="broll__thumb"><img src="ProfessionalsAndAcads/miko.png" alt="Documentation film"></div>
@@ -119,17 +294,15 @@
                                     <p>Shot and edited the full documentation — arranging footage, grading, and cutting it down to the key moments.</p>
                                 </a>
 
-                                <a class="broll__card" href="https://nexora-teamph.onrender.com/" target="_blank" rel="noopener">
-                                    <div class="broll__thumb"><img src="ProfessionalsAndAcads/nexora.jpeg" alt="Nexora website"></div>
-                                    <h3>Nexora</h3>
-                                    <p>Built the website for Nexora, where customers browse products and check out directly online.</p>
+
+                                <a class="broll__card" href="https://youtu.be/bCmFgRZmzV8" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="ProfessionalsAndAcads/journeyPenablanca.png" alt="TSC MOJO documentary"></div>
+                                    <h3>TSC MOJO</h3>
+                                    <p>Video editor on a documentary about the Land of the Caves in Peñablanca — shaped the pacing and visual quality of the final cut.</p>
                                 </a>
 
-                                <a class="broll__card" href="https://www.facebook.com/share/v/17qgRYVYB8/" target="_blank" rel="noopener">
-                                    <div class="broll__thumb"><img src="ProfessionalsAndAcads/cresset.png" alt="The Senior Cresset"></div>
-                                    <h3>The Senior Cresset</h3>
-                                    <p>Editor and videographer for the school's broadcast team — capturing, producing, and cutting broadcasts and event features.</p>
-                                </a>
+                                
+
 
                                 <a class="broll__card" href="https://youtu.be/dMvp4vchcNE?si=3rzyOl-Krh4GyuJK" target="_blank" rel="noopener">
                                     <div class="broll__thumb"><img src="ProfessionalsAndAcads/Documentation.png" alt="Documentation film"></div>
@@ -141,18 +314,33 @@
                         </div>
                     </div>
 
+
+
+                    
+
                     <!-- Personal projects: for myself, learning, experimentation -->
                     <div class="folder" id="personal">
                         <button class="folder__btn" type="button" aria-expanded="false" aria-controls="personalPanel">
                             <span class="folder__icon"><i class="fa-regular fa-folder"></i></span>
                             <span class="folder__title"><strong>Personal Projects</strong><small>Built for myself, learning &amp; experimenting</small></span>
-                            <span class="folder__meta">4 ITEMS</span>
+                            <span class="folder__meta">5 ITEMS</span>
                             <span class="folder__close">CLOSE ✕</span>
                             <i class="fa-solid fa-chevron-right folder__chev"></i>
                         </button>
                         <div class="folder__panel" id="personalPanel" hidden>
                             <p class="folder__path">~/projects/personal</p>
                             <div class="broll__grid">
+
+
+                                <a class="broll__card" href="https://nexora-teamph.onrender.com/" target="_blank" rel="noopener">
+                                    <div class="broll__thumb"><img src="ProfessionalsAndAcads/nexora.jpeg" alt="Nexora website"></div>
+                                    <h3>Nexora</h3>
+                                    <p>Built the website for Nexora, where customers browse products and check out directly online.</p>
+                                </a>
+
+                              
+
+
 
                                 <a class="broll__card" href="https://p-booth.onrender.com" target="_blank" rel="noopener">
                                     <div class="broll__thumb"><img src="ProjectIMG/pboot.png" alt="Photo Booth app"></div>
