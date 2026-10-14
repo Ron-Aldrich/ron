@@ -499,6 +499,8 @@ a:focus-visible, button:focus-visible {
     cursor: pointer;
 }
 
+
+
 @media (max-width: 480px) {
     .cert-close { top: 12px; right: 16px; font-size: 26px; }
 }
